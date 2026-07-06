@@ -249,9 +249,36 @@ h1 { line-height: 1; }
 .footer-links a:hover { color: #fff; }
 .footer-contact p { display: flex; align-items: center; gap: 8px; color: #4a607a; font-size: .82rem; margin-bottom: 10px; }
 .footer-bottom { display: flex; justify-content: space-between; font-size: .72rem; color: #2a3a50; }
+.footer-legal-links a { color: #4a607a; text-decoration: none; transition: color .2s; }
+.footer-legal-links a:hover { color: #fff; }
 .footer-credit { text-align: center; margin-top: 10px; font-size: .68rem; color: #2a3a50; }
 .footer-credit a { color: #4a607a; text-decoration: none; transition: color .2s; }
 .footer-credit a:hover { color: #fff; }
+
+/* ─── LEGAL PAGES (Privacy Policy / Terms) ─── */
+.legal-page { background: linear-gradient(170deg, #070f1c 0%, #0a1628 60%, #050d18 100%); padding: 64px 0 90px; min-height: 60vh; }
+.legal-content { max-width: 760px; }
+.legal-content h1 {
+  font-family: 'Oswald', sans-serif; font-size: 2.6rem; font-weight: 800; text-transform: uppercase;
+  color: #fff; letter-spacing: -.5px; margin-bottom: 22px;
+}
+.legal-content h2 {
+  font-family: 'Oswald', sans-serif; font-size: 1.3rem; font-weight: 700;
+  color: #7fb0ff; margin: 34px 0 12px;
+}
+.legal-content p { font-size: .92rem; line-height: 1.75; color: #c0d0e4; margin-bottom: 14px; }
+.legal-content .legal-intro { font-size: 1rem; color: #9eb5d4; }
+.legal-content ul { margin: 6px 0 14px 22px; }
+.legal-content li { font-size: .92rem; line-height: 1.8; color: #c0d0e4; }
+.legal-content a { color: #4a90e2; }
+.legal-content a:hover { color: #7fb0ff; }
+.legal-contact { color: #c0d0e4; line-height: 1.9; }
+.legal-back {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 30px;
+  color: #f5a623; font-weight: 700; text-decoration: none; font-size: .9rem;
+  transition: color .2s;
+}
+.legal-back:hover { color: #ffb84d; }
 
 /* ─── MOBILE STICKY ─── */
 .mobile-cta { display: none; }
@@ -345,6 +372,7 @@ h1 { line-height: 1; }
 
   /* Section titles */
   .section-title { font-size: 2rem; }
+  .legal-content h1 { font-size: 1.9rem; }
   .cta-headline { font-size: 2rem; }
   .cta-headline-sub { font-size: 1.6rem; }
 }
