@@ -198,15 +198,34 @@ h1 { line-height: 1; }
 .cta-headline { font-family: 'Oswald', sans-serif; font-size: 3.4rem; font-weight: 700; text-transform: uppercase; line-height: 1.0; letter-spacing: -.5px; }
 .cta-headline-sub { display: block; font-style: italic; color: var(--red); font-size: 2.4rem; margin-top: 4px; text-shadow: 0 0 30px rgba(214,40,40,.4); }
 .cta-right { display: flex; flex-direction: column; gap: 14px; }
-.cta-btn { display: flex; align-items: center; gap: 16px; padding: 18px 24px; border-radius: 10px; text-decoration: none; transition: filter .2s, transform .15s; }
-.cta-btn:hover { filter: brightness(1.1); transform: translateY(-2px); }
-.cta-btn--red  { background: var(--red); }
-.cta-btn--blue { background: var(--blue); }
-.cta-btn-icon { width: 46px; height: 46px; border-radius: 8px; background: rgba(255,255,255,.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.cta-btn-text { display: flex; flex-direction: column; }
-.cta-btn-main { font-family: 'Oswald', sans-serif; font-size: 1.35rem; font-weight: 700; color: #fff; letter-spacing: .5px; }
-.cta-btn-sub  { font-size: .72rem; font-weight: 600; color: rgba(255,255,255,.7); letter-spacing: .5px; margin-top: 2px; }
 .cta-trust-row { display: flex; gap: 22px; padding-top: 10px; flex-wrap: wrap; }
+
+/* ─── LEAD FORM (Final CTA) ─── */
+.cta-form { display: flex; flex-direction: column; gap: 12px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); border-radius: 14px; padding: 26px; }
+.form-row { display: flex; gap: 12px; }
+.cta-form input,
+.cta-form textarea {
+  width: 100%; background: rgba(5,10,19,.6); border: 1.5px solid rgba(255,255,255,.12);
+  border-radius: 8px; padding: 13px 14px; color: #fff; font-family: 'Montserrat', sans-serif;
+  font-size: .88rem; font-weight: 600; transition: border-color .2s, background .2s;
+}
+.cta-form input::placeholder,
+.cta-form textarea::placeholder { color: #5a7898; font-weight: 500; }
+.cta-form input:focus,
+.cta-form textarea:focus { outline: none; border-color: var(--blue); background: rgba(5,10,19,.85); }
+.cta-form textarea { resize: vertical; min-height: 70px; }
+
+.cta-form-submit {
+  background: var(--red); color: #fff; border: none; border-radius: 8px; padding: 16px 24px;
+  font-family: 'Oswald', sans-serif; font-size: 1.05rem; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; cursor: pointer; transition: filter .2s, transform .15s;
+}
+.cta-form-submit:hover { filter: brightness(1.1); transform: translateY(-1px); }
+.cta-form-submit:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+
+.cta-form-status { font-size: .82rem; font-weight: 600; text-align: center; min-height: 1.2em; }
+.cta-form-status.success { color: #6fd18a; }
+.cta-form-status.error { color: #ff7a7a; }
 .cta-trust-item { display: flex; align-items: center; gap: 6px; font-size: .72rem; font-weight: 700; color: #6a88ab; text-transform: uppercase; letter-spacing: .8px; }
 
 /* ─── FOOTER ─── */
@@ -243,9 +262,6 @@ h1 { line-height: 1; }
   .hero { min-height: auto; }
   .hero-grid { padding: 60px 0 50px; }
   .hero-overlay { background: linear-gradient(90deg, rgba(7,17,29,.97) 0%, rgba(7,17,29,.92) 55%, rgba(7,17,29,.7) 100%); }
-  /* Recenter the hero art on narrow screens — desktop uses "center right" which
-     crops the subject off-frame on mobile widths. Re-checking the actual crop
-     on a real phone and nudging this % is on you, I can't preview your hero.png. */
   .hero-bg-image { background-position: center center; }
   .h1-line1 { font-size: 1.9rem; letter-spacing: 4px; }
   .h1-line2 { font-size: clamp(3.5rem, 10vw, 6rem); letter-spacing: -2px; }
@@ -306,9 +322,9 @@ h1 { line-height: 1; }
   /* Why — single column */
   .why-grid { grid-template-columns: 1fr; }
 
-  /* CTA */
-  .cta-btn { padding: 16px 18px; }
-  .cta-btn-main { font-size: 1.1rem; }
+  /* CTA — form */
+  .cta-form { padding: 20px; }
+  .form-row { flex-direction: column; }
   .cta-trust-row { justify-content: center; gap: 14px; }
 
   /* Footer */
