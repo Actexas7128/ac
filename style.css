@@ -255,6 +255,31 @@ h1 { line-height: 1; }
 .footer-credit a { color: #4a607a; text-decoration: none; transition: color .2s; }
 .footer-credit a:hover { color: #fff; }
 
+/* ─── ABOUT PAGE ─── */
+.about-hero { background: linear-gradient(135deg, #050a13 0%, #07111d 50%, #0a1628 100%); padding: 70px 0 60px; position: relative; overflow: hidden; }
+.about-hero::before { content: ''; position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(10,78,163,0.14) 0%, transparent 70%); pointer-events: none; }
+.about-hero-inner { position: relative; z-index: 1; max-width: 780px; }
+.about-eyebrow { justify-content: flex-start; margin-bottom: 18px; }
+.about-headline { font-family: 'Oswald', sans-serif; font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 700; text-transform: uppercase; color: #fff; line-height: 1.08; letter-spacing: -.5px; margin-bottom: 22px; }
+.txt-red-italic { color: var(--red); font-style: italic; text-shadow: 0 0 40px rgba(214,40,40,.4); }
+.about-lede { font-size: 1rem; line-height: 1.8; color: #9eb5d4; max-width: 700px; }
+
+.about-values { background: linear-gradient(170deg, #070f1c 0%, #0a1628 60%, #050d18 100%); padding: 60px 0 70px; }
+.about-values-title { color: #fff; }
+.about-values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.about-value-card { background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.09); border-radius: 14px; padding: 30px 24px; text-align: center; transition: background .25s, transform .25s, border-color .25s; }
+.about-value-card:hover { background: rgba(10,78,163,.1); border-color: rgba(10,78,163,.45); transform: translateY(-4px); }
+.about-value-icon { display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.about-value-card h3 { font-family: 'Oswald', sans-serif; font-size: 1.15rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #fff; margin-bottom: 10px; }
+.about-value-card p { font-size: .85rem; line-height: 1.65; color: #7a95b8; }
+
+.about-serve { background: linear-gradient(160deg, #07111d 0%, #0a1a30 50%, #071118 100%); padding: 70px 0; }
+.about-serve-inner { max-width: 700px; }
+.about-serve-eyebrow { justify-content: flex-start; }
+.about-serve-title { font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; text-transform: uppercase; color: #fff; margin-bottom: 18px; line-height: 1.15; }
+.about-serve-text p { font-size: .95rem; line-height: 1.8; color: #c0d0e4; margin-bottom: 28px; }
+.about-serve-cta { display: inline-flex; }
+
 /* ─── LEGAL PAGES (Privacy Policy / Terms) ─── */
 .legal-page { background: linear-gradient(170deg, #070f1c 0%, #0a1628 60%, #050d18 100%); padding: 64px 0 90px; min-height: 60vh; }
 .legal-content { max-width: 760px; }
@@ -318,6 +343,9 @@ h1 { line-height: 1; }
   /* Why */
   .why-grid { grid-template-columns: repeat(2, 1fr); }
 
+  /* About page */
+  .about-values-grid { grid-template-columns: repeat(2, 1fr); }
+
   /* CTA */
   .cta-grid { grid-template-columns: 1fr; gap: 36px; }
   .cta-left { align-items: center; text-align: center; }
@@ -360,6 +388,9 @@ h1 { line-height: 1; }
 
   /* Why — single column */
   .why-grid { grid-template-columns: 1fr; }
+
+  /* About page */
+  .about-values-grid { grid-template-columns: 1fr; }
 
   /* CTA — form */
   .cta-form { padding: 20px; }
