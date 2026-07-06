@@ -255,6 +255,33 @@ h1 { line-height: 1; }
 .footer-credit a { color: #4a607a; text-decoration: none; transition: color .2s; }
 .footer-credit a:hover { color: #fff; }
 
+/* ─── SERVICE DETAIL PAGES ─── */
+.svc-detail-hero { background: linear-gradient(135deg, #050a13 0%, #07111d 50%, #0a1628 100%); padding: 60px 0; position: relative; overflow: hidden; }
+.svc-detail-hero::before { content: ''; position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(10,78,163,0.14) 0%, transparent 70%); pointer-events: none; }
+.svc-detail-hero-grid { display: grid; grid-template-columns: 260px 1fr; gap: 48px; align-items: center; position: relative; z-index: 1; }
+.svc-detail-badge-wrap { background: #000; border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,.08); aspect-ratio: 4/3; }
+.svc-detail-badge { width: 100%; height: 100%; object-fit: contain; display: block; }
+.svc-detail-eyebrow { justify-content: flex-start; margin-bottom: 16px; }
+.svc-detail-headline { font-family: 'Oswald', sans-serif; font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 700; text-transform: uppercase; color: #fff; line-height: 1.1; letter-spacing: -.5px; margin-bottom: 18px; }
+.svc-detail-intro { font-size: .95rem; line-height: 1.8; color: #9eb5d4; max-width: 640px; margin-bottom: 26px; }
+
+.svc-detail-body { background: linear-gradient(170deg, #070f1c 0%, #0a1628 60%, #050d18 100%); padding: 60px 0; }
+.svc-detail-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.svc-detail-col-title { font-family: 'Oswald', sans-serif; font-size: 1.3rem; font-weight: 700; text-transform: uppercase; color: #7fb0ff; margin-bottom: 20px; }
+.svc-detail-list { list-style: none; }
+.svc-detail-list li {
+  position: relative; padding-left: 24px; margin-bottom: 14px;
+  font-size: .9rem; line-height: 1.6; color: #c0d0e4;
+}
+.svc-detail-list li::before {
+  content: ''; position: absolute; left: 0; top: 8px; width: 8px; height: 8px;
+  border-radius: 50%; background: var(--red);
+}
+
+.svc-detail-cta { background: linear-gradient(160deg, #07111d 0%, #0a1a30 50%, #071118 100%); padding: 60px 0; text-align: center; }
+.svc-detail-cta-inner { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.svc-detail-cta-title { font-family: 'Oswald', sans-serif; font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 700; text-transform: uppercase; color: #fff; }
+
 /* ─── ABOUT PAGE ─── */
 .about-hero { background: linear-gradient(135deg, #050a13 0%, #07111d 50%, #0a1628 100%); padding: 70px 0 60px; position: relative; overflow: hidden; }
 .about-hero::before { content: ''; position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(10,78,163,0.14) 0%, transparent 70%); pointer-events: none; }
@@ -345,6 +372,13 @@ h1 { line-height: 1; }
 
   /* About page */
   .about-values-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Service detail pages */
+  .svc-detail-hero-grid { grid-template-columns: 1fr; text-align: center; }
+  .svc-detail-badge-wrap { max-width: 220px; margin: 0 auto; }
+  .svc-detail-eyebrow { justify-content: center; }
+  .svc-detail-intro { margin-left: auto; margin-right: auto; }
+  .svc-detail-cols { grid-template-columns: 1fr; gap: 30px; }
 
   /* CTA */
   .cta-grid { grid-template-columns: 1fr; gap: 36px; }
