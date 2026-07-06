@@ -1,0 +1,66 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Areas | Air Conditioning Texas</title>
+<meta name="description" content="Air Conditioning Texas proudly serves Fort Worth, Dallas, Arlington, Mansfield, Grand Prairie, and the surrounding DFW metroplex.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+{% include header.html active="service-areas" %}
+
+<!-- ===== SERVICE AREAS HERO ===== -->
+<section class="city-hero">
+  <div class="container city-hero-inner">
+    <p class="section-eyebrow city-eyebrow">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="#d62828"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      Service Areas
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="#d62828"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </p>
+    <h1 class="city-headline">Proudly Serving The<br><span class="txt-red-italic">DFW Metroplex.</span></h1>
+    <p class="city-lede">Air Conditioning Texas provides AC repair, heating, indoor air quality, and commercial HVAC services throughout the Dallas-Fort Worth area. Find your city below.</p>
+  </div>
+</section>
+
+<!-- ===== CITY GRID ===== -->
+<section class="city-services">
+  <div class="container">
+    <div class="city-services-grid">
+      <a href="fort-worth.html" class="city-service-card">
+        <h3>Fort Worth</h3>
+        <p>AC repair, heating &amp; HVAC service in Fort Worth, TX.</p>
+      </a>
+      <a href="dallas.html" class="city-service-card">
+        <h3>Dallas</h3>
+        <p>AC repair, heating &amp; HVAC service in Dallas, TX.</p>
+      </a>
+      <a href="arlington.html" class="city-service-card">
+        <h3>Arlington</h3>
+        <p>AC repair, heating &amp; HVAC service in Arlington, TX.</p>
+      </a>
+      <a href="mansfield.html" class="city-service-card">
+        <h3>Mansfield</h3>
+        <p>AC repair, heating &amp; HVAC service in Mansfield, TX.</p>
+      </a>
+      <a href="grand-prairie.html" class="city-service-card">
+        <h3>Grand Prairie</h3>
+        <p>AC repair, heating &amp; HVAC service in Grand Prairie, TX.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% include footer.html %}
+
+{% include mobile-cta.html %}
+
+{% include scripts.html %}
+
+</body>
+</html>
