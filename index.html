@@ -136,6 +136,7 @@
     </div>
     <div class="container service-grid">
 
+      <!-- AC: Ice cold — deep blue with light rays and crystalline snowflake -->
       <article class="svc-card">
         <div class="svc-img svc-img--photo">
           <img src="icon-ac.png" alt="Air Conditioning" class="svc-photo">
@@ -147,6 +148,7 @@
         </div>
       </article>
 
+      <!-- HEATING -->
       <article class="svc-card">
         <div class="svc-img svc-img--photo">
           <img src="icon-heating.png" alt="Heating" class="svc-photo">
@@ -158,6 +160,7 @@
         </div>
       </article>
 
+      <!-- AIR QUALITY -->
       <article class="svc-card">
         <div class="svc-img svc-img--photo">
           <img src="icon-air.png" alt="Indoor Air Quality" class="svc-photo">
@@ -169,6 +172,7 @@
         </div>
       </article>
 
+      <!-- COMMERCIAL -->
       <article class="svc-card">
         <div class="svc-img svc-img--photo">
           <img src="icon-commercial.png" alt="Commercial HVAC" class="svc-photo">
@@ -194,6 +198,7 @@
     </p>
     <div class="why-grid">
 
+      <!-- FAST RESPONSE -->
       <div class="why-item">
         <div class="why-icon-wrap">
           <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
@@ -219,6 +224,7 @@
         <div class="why-text"><h3>Fast Response</h3><p>We show up when we say we will.</p></div>
       </div>
 
+      <!-- HONEST PRICING -->
       <div class="why-item">
         <div class="why-icon-wrap">
           <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
@@ -237,6 +243,7 @@
         <div class="why-text"><h3>Honest Pricing</h3><p>Upfront prices. No surprises. Ever.</p></div>
       </div>
 
+      <!-- 5-STAR SERVICE -->
       <div class="why-item">
         <div class="why-icon-wrap">
           <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
@@ -255,6 +262,7 @@
         <div class="why-text"><h3>5-Star Service</h3><p>Hundreds of happy customers across Texas.</p></div>
       </div>
 
+      <!-- TEXAS OWNED -->
       <div class="why-item">
         <div class="why-icon-wrap">
           <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
@@ -292,6 +300,10 @@
         <input type="tel" name="phone" placeholder="Phone Number" required>
         <input type="email" name="email" placeholder="Email Address" required>
         <textarea name="message" placeholder="Tell us what you need help with" rows="3" required></textarea>
+        <label class="form-consent">
+          <input type="checkbox" name="smsConsent" id="smsConsent">
+          <span>I agree to receive SMS communication from Air Conditioning Texas regarding estimates, appointments, and service updates. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out. Reply HELP for help. Consent is not a condition of purchase.</span>
+        </label>
         <button type="submit" class="cta-form-submit">
           <span class="cta-form-submit-text">GET MY FREE QUOTE</span>
         </button>
@@ -373,6 +385,7 @@
     formStatus.className = 'cta-form-status';
 
     const data = Object.fromEntries(new FormData(leadForm).entries());
+    data.smsConsent = document.getElementById('smsConsent').checked;
 
     try {
       const res = await fetch(GHL_WEBHOOK_URL, {
