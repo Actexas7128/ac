@@ -215,6 +215,15 @@ h1 { line-height: 1; }
 .cta-form textarea:focus { outline: none; border-color: var(--blue); background: rgba(5,10,19,.85); }
 .cta-form textarea { resize: vertical; min-height: 70px; }
 
+.form-consent {
+  display: flex; align-items: flex-start; gap: 10px; cursor: pointer;
+  font-size: .74rem; line-height: 1.5; color: #6a88ab; font-weight: 500;
+}
+.form-consent input[type="checkbox"] {
+  width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px;
+  accent-color: var(--blue); cursor: pointer;
+}
+
 .cta-form-submit {
   background: var(--red); color: #fff; border: none; border-radius: 8px; padding: 16px 24px;
   font-family: 'Oswald', sans-serif; font-size: 1.05rem; font-weight: 700; letter-spacing: 1px;
@@ -262,6 +271,9 @@ h1 { line-height: 1; }
   .hero { min-height: auto; }
   .hero-grid { padding: 60px 0 50px; }
   .hero-overlay { background: linear-gradient(90deg, rgba(7,17,29,.97) 0%, rgba(7,17,29,.92) 55%, rgba(7,17,29,.7) 100%); }
+  /* Recenter the hero art on narrow screens — desktop uses "center right" which
+     crops the subject off-frame on mobile widths. Re-checking the actual crop
+     on a real phone and nudging this % is on you, I can't preview your hero.png. */
   .hero-bg-image { background-position: center center; }
   .h1-line1 { font-size: 1.9rem; letter-spacing: 4px; }
   .h1-line2 { font-size: clamp(3.5rem, 10vw, 6rem); letter-spacing: -2px; }
