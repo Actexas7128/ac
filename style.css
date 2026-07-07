@@ -254,6 +254,10 @@ h1 { line-height: 1; }
 .footer-credit { text-align: center; margin-top: 10px; font-size: .68rem; color: #2a3a50; }
 .footer-credit a { color: #4a607a; text-decoration: none; transition: color .2s; }
 .footer-credit a:hover { color: #fff; }
+.footer-regulatory { text-align: center; margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,.06); }
+.footer-regulatory p { font-size: .68rem; color: #4a607a; line-height: 1.7; margin: 0; }
+.footer-regulatory a { color: #4a607a; text-decoration: underline; }
+.footer-regulatory a:hover { color: #fff; }
 
 /* ─── CITY / SERVICE AREA PAGES ─── */
 .city-hero { background: linear-gradient(135deg, #050a13 0%, #07111d 50%, #0a1628 100%); padding: 70px 0 60px; position: relative; overflow: hidden; }
