@@ -16,7 +16,7 @@ body { font-family: 'Montserrat', sans-serif; color: #222; overflow-x: hidden; }
 /* ─── HEADER ─── */
 .header { background: #050a13; position: sticky; top: 0; z-index: 999; border-bottom: 1px solid rgba(255,255,255,.06); }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; }
-.logo { height: 110px !important; width: auto !important; display: block; }
+.logo { height: 130px !important; width: auto !important; display: block; }
 
 .nav-desktop { display: flex; gap: 28px; }
 .nav-desktop a { text-decoration: none; color: #c0cfe4; font-weight: 600; font-size: .82rem; letter-spacing: 1px; text-transform: uppercase; padding-bottom: 3px; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; }
@@ -375,7 +375,7 @@ h1 { line-height: 1; }
   .nav-desktop { display: none; }
   .call-btn-desktop { display: none; }
   .mobile-header-controls { display: flex; }
-  .logo { height: 70px !important; }
+  .logo { height: 82px !important; }
   .nav-wrap { padding: 8px 0; }
 
   /* Hero */
